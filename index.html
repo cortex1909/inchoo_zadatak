@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inchoo</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="cartbutton">
+            <button type="button" id="cartBtn" class="btnCart" onclick="showDiv()"><img src="img/Shape.svg"
+                    alt="Shopping Cart">
+            </button>
+        </div>
+        <div id="cartlist" style="">
+
+            <div class="cartheader">
+                <h4>My Cart (3 items)</h4>
+            </div>
+            <div class="button-up">
+                <button type="button" id="btnUp" class="btnUp" onclick="GoUp()"><img src="img/up.svg" alt="Button up"
+                        width="16px">
+            </div>
+
+            <div class="item">
+
+                <div class="listing">
+                    <div class="itemimg">
+                        <img src="img/item1.png" alt="item1">
+                    </div>
+                    <ul class="table">
+                        <li class="itemname">Set of GT-S Series Cross Drilled</li>
+                        <ul class="atributes">
+                            <li class="iteminfo">Brand: Brembo</li>
+                            <li class="iteminfo">Color: Red</li>
+                        </ul>
+                        <li class="itemprice">1 x $1770.00</li>
+                    </ul>
+                </div>
+                <div class="listing">
+                    <div class="itemimg">
+                        <img src="img/item2.png" alt="item2">
+                    </div>
+                    <ul class="table">
+                        <li class="itemname">Just Disk GT-S Cross Drilled</li>
+                        <ul class="atributes">
+                            <li class="iteminfo">Brand: Barbour International</li>
+                            <li class="iteminfo">Size: 405mm</li>
+                        </ul>
+                        <li class="itemprice">1 x $950.00</li>
+                    </ul>
+                </div>
+                <div class="listing">
+                    <div class="itemimg">
+                        <img src="img/item3.png" alt="item3">
+                    </div>
+                    <ul class="table">
+                        <li class="itemname">GT Slotted 2 Piece Brake Rotors</li>
+                        <ul class="atributes">
+                            <li class="iteminfo">Brand: Brembo</li>
+                            <li class="iteminfo">Color: Yellow</li>
+                        </ul>
+                        <li class="itemprice">2 x $1670.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button-down">
+                <button type="button" id="btnDown" class="btnDown" onclick="GoDown()"><img src="img/down.svg" alt="Button down"
+                        width="16px">
+            </div>
+            <div class="cartfooter">
+                <button type="button" id="cartBtnEdit" class="btnCartEdit">Edit Cart
+                </button>
+                <button type="button" id="cartBtnCheckout" class="btnCartCheckout">CHECKOUT
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
